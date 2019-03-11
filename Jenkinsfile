@@ -25,7 +25,7 @@ pipeline {
         stage('dockerimage'){
             steps{
                 script {
-                    def customImage = docker.build "petclinic"
+                    def customImage = docker.build "cultofcloud/petclinic"
                     customImage.push()
                 }
             }
